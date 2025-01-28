@@ -42,15 +42,15 @@
         }
 
         #section1 {
-        background: #9e9e9e;
+            background: #9e9e9e;
         }
 
         #section2 {
-       background: #3f3f3f;
+            background: #3f3f3f;
         }
 
         #section3 {
-        background: #44444475;
+            background: #44444475;
         }
 
         footer {
@@ -60,120 +60,110 @@
             padding: 10px 0;
         }
 
-    #section1 {
-    background-image: url('background1.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 50px;
-    min-height: 100vh;
-    position: relative;
-}
+        #section1 {
+            background-image: url('background1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+            min-height: 100vh;
+            position: relative;
+        }
 
-#section1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 0;
-}
+        #section1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
 
-#section1 h2, #section1 p {
-    position: relative;
-    z-index: 1; 
-}
+        #section1 h2, #section1 p {
+            position: relative;
+            z-index: 1; 
+        }
 
+        #section2 {
+            background-image: url('background2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+            min-height: 100vh;
+            position: relative;
+        }
 
+        #section2::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
 
+        #section2 h2, #section2 p {
+            position: relative;
+            z-index: 1; 
+        }
 
-#section2 {
-    background-image: url('background2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 50px;
-    min-height: 100vh;
-    position: relative;
-}
+        #section3 {
+            background-image: url('background3.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+            min-height: 100vh;
+            position: relative;
+        }
 
-#section2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 0;
-}
+        #section3::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
 
-#section2 h2, #section2 p {
-    position: relative;
-    z-index: 1; 
-}
+        #section3 h2, #section3 p {
+            position: relative;
+            z-index: 1; 
+        }
 
+        #button3 {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
+        #button3:hover {
+            background-color: #0056b3;
+        }
 
-#section3 {
-    background-image: url('background3.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 50px;
-    min-height: 100vh;
-    position: relative;
-}
+        button {
+            position: relative; 
+            z-index: 1;
+        }
 
-#section3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 0;
-}
-
-#section3 h2, #section3 p {
-    position: relative;
-    z-index: 1; 
-}
-#button3 {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#button3:hover {
-    background-color: #0056b3;
-}
-
-
-#section3 {
-    position: relative;
-}
-
-button {
-    position: relative; 
-    z-index: 1;
-}
-#message {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-}
-
-
+        #message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
@@ -198,28 +188,25 @@ button {
     </section>
 
     <section id="section3">
-        <section id="section3">
-            <h2>Contact</h2>
-            <p>Tämä on kolmas osa sivustoa.</p>
-            <button id="button3">Paina tästä!</button>
-            <div id="message"></div>
-        </section>
-    
+        <h2>Contact</h2>
+        <p>Tämä on kolmas osa sivustoa.</p>
+        <button id="button3">Paina tästä!</button>
+        <div id="message"></div>
+    </section>
 
     <footer>
         <p>&copy; Peetu Naumanen</p>
     </footer>
 
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const button3 = document.getElementById("button3");
-    const messageDiv = document.getElementById("message");
+        document.addEventListener("DOMContentLoaded", function () {
+            const button3 = document.getElementById("button3");
+            const messageDiv = document.getElementById("message");
 
-    button3.addEventListener("click", function () {
-        messageDiv.innerHTML = "<p>Yhteystiedot: Peetu.naumanen@centria.fi</p>";
-    });
-});
-
+            button3.addEventListener("click", function () {
+                messageDiv.innerHTML = "<p>Yhteystiedot: Peetu.naumanen@centria.fi</p>";
+            });
+        });
     </script>
 </body>
 </html>
