@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px;
+            min-height: 100vh;
+        }
+
+        #section1 {
+            background: #9e9e9e;
+        }
+
+        #section2 {
+            background: #3f3f3f;
+        }
+
+        #section3 {
+            background: #44444475;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #section1 {
+            background-image: url('background1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        #section1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
+
+        #section1 h2, #section1 p {
+            position: relative;
+            z-index: 1; 
+        }
+
+        #section2 {
+            background-image: url('background2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        #section2::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
+
+        #section2 h2, #section2 p {
+            position: relative;
+            z-index: 1; 
+        }
+
+        #section3 {
+            background-image: url('background3.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        #section3::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
+
+        #section3 h2, #section3 p {
+            position: relative;
+            z-index: 1; 
+        }
+
+        #button3 {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #button3:hover {
+            background-color: #0056b3;
+        }
+
+        button {
+            position: relative; 
+            z-index: 1;
+        }
+
+        #message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Single Page Website</h1>
+    </header>
+
+    <nav>
+        <a href="#section1">Home Page</a>
+        <a href="#section2">About</a>
+        <a href="#section3">Contact</a>
+    </nav>
+
+    <section id="section1">
+        <h2>Home Page</h2>
+        <p>Tämä on ensimmäinen osa sivustoa.<br> <br>Tervetuloa! :D</p>
+    </section>
+
+    <section id="section2">
+        <h2>About</h2>
+        <p>Tämä on toinen osa sivustoa.<br><br>Eikös olekkin söpö lintu! </p>
+    </section>
+
+    <section id="section3">
+        <h2>Contact</h2>
+        <p>Tämä on kolmas osa sivustoa.</p>
+        <button id="button3">Paina tästä!</button>
+        <div id="message"></div>
+    </section>
+
+    <footer>
+        <p>&copy; Peetu Naumanen</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const button3 = document.getElementById("button3");
+            const messageDiv = document.getElementById("message");
+
+            button3.addEventListener("click", function () {
+                messageDiv.innerHTML = "<p>Yhteystiedot: Peetu.naumanen@centria.fi</p>";
+            });
+        });
+    </script>
+</body>
+</html>
